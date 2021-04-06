@@ -1,0 +1,32 @@
+@media screen and (max-width:375px){
+    :root{
+        --border-rad:10px;
+        --background-color-1:hsl(31, 77%, 52%);
+        --background-color-2:hsl(184, 100%, 22%);
+        --background-color-3:hsl(179, 100%, 13%);
+
+    }
+    body{
+        height:1200px;
+    }
+    div.card-container{
+        width:90%;
+        height:100%;
+        grid-template-columns:1fr;
+        margin:0%;
+        bottom:100%;
+        position:absolute;
+        top:52%;
+    }
+    div.card-1{
+        border-top-right-radius:var(--border-rad);
+        border-top-left-radius:var(--border-rad);
+        border-bottom-right-radius:0px;
+        border-bottom-left-radius:0px;
+    }
+    div.card-3{
+        border-bottom-left-radius:var(--border-rad);
+        border-bottom-right-radius:var(--border-rad);
+        border-top-left-radius:0px;
+        border-top-right-radius:0px;
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+:root{
+    --border-rad:10px;
+    --background-color-1:hsl(31, 77%, 52%);
+    --background-color-2:hsl(184, 100%, 22%);
+    --background-color-3:hsl(179, 100%, 13%);
+    --transition-time:0.3s;
+
+}
+body{
+    width:100%;
+    height:650px;
+    position:relative;
+}
+
+div.card-container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:grid;
+    width:70%;
+    height:400px;
+    grid-template-rows:auto;
+    grid-template-columns:1fr 1fr 1fr;
+    border-radius:var(--border-rad);
+}
+div.card{
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-rows:1fr 1fr 3fr 1fr;
+    padding:10%;
+}
+div.card div.heading{
+    font-family:"Lexend Deca";
+    font-weight:700;
+    color:white;
+    font-size:1.5rem;
+    text-transform:uppercase;
+}
+div.card div.content{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family:"Big shoulders display";
+    font-family: 'Cookie', cursive;
+    font-size:1.3rem;
+    padding-top:5%;
+
+}
+div.card button{
+    background-color:white;
+    border:2px solid white;
+    border-radius:25px;
+    color:inherit;
+    width:90%;
+    height:85%;
+}
+#button-1{
+    color:var(--background-color-1);
+    transition-property:background-color;
+    transition-duration:var(--transition-time);
+}
+#button-2{
+    color:var(--background-color-2);
+    transition-property:background-color;
+    transition-duration:var(--transition-time);
+}
+#button-3{
+    color:var(--background-color-3);
+    transition-property:background-color;
+    transition-duration:var(--transition-time);
+}
+#button-1:hover{
+    background-color:inherit;
+    color:white;
+}
+#button-2:hover{
+    background-color:inherit;
+    color:white;
+}
+#button-3:hover{
+    background-color:inherit;
+    color:white;
+}
+div.card-1{
+    background-color:var(--background-color-1);
+    border-top-left-radius:var(--border-rad);
+    border-bottom-left-radius:var(--border-rad);
+}
+div.card-2{
+    background-color:var(--background-color-2);
+}
+div.card-3{
+    background-color:var(--background-color-3);
+    border-top-right-radius:var(--border-rad);
+    border-bottom-right-radius:var(--border-rad);
+}
